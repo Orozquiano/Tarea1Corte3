@@ -1,0 +1,30 @@
+[
+    {
+        "number": 1,
+        "name": "Bulbasaur",
+        "type":[
+            { "name": "Planta", "strongAgainst": "Agua", "weakAgainst":"Fuego"}
+        ],
+        "img": "https://i.pinimg.com/originals/d6/61/96/d66196beb60d306a966ea39ed11c2b3d.png"
+
+    },
+    {
+        "number": 2,
+        "name": "Charmander",
+        "type":[
+            { "name": "Fuego", "strongAgainst": "Acero", "weakAgainst":"Agua"}
+        ],
+        "img": "https://hablamosdegamers.com/wp-content/uploads/2019/11/Pokemon-Espada-y-Escudo-C%C3%B3mo-Capturar-a-Charmander.jpg"
+
+    },
+    {
+        "number": 3,
+        "name": "Caterpie",
+        "type":[
+            { "name": "Bicho", "strongAgainst": "Planta", "weakAgainst":"Fuego"}
+        ],
+        "img": "https://tecmoviles.com/wp-content/uploads/2016/09/evolucion-de-caterpie-todos-los-trucos-oruga-600x606.png"
+
+    }
+
+]
