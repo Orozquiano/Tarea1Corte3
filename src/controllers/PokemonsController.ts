@@ -54,7 +54,7 @@ export function getCreate(req: Request, res: Response) {
 export function getFuerte(req: Request, res: Response) {
     try {
         const name = req.params.name && req.params.name;
-        if(!name){ throw "Se requiere el ID del pokemon."}
+        if(!name){ throw "Se requiere el numero del pokemon."}
         const pokemon = PokemonsService.getFuerte(name);
         res.status(200).json(pokemon);
     } catch (error) {
@@ -65,7 +65,7 @@ export function getFuerte(req: Request, res: Response) {
 export function getDebil(req: Request, res: Response) {
     try {
         const name = req.params.name && req.params.name;
-        if(!name){ throw "Se requiere el ID del pokemon."}
+        if(!name){ throw "Se requiere el numero del pokemon."}
         const pokemon = PokemonsService.getDebil(name);
         res.status(200).json(pokemon);
     } catch (error) {

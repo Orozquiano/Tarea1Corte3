@@ -76,6 +76,27 @@ module DigimonsService {
 
         return matches;
     }
+    export function getDebil(name:string): Array<DigimonI> {
+        const Digimons: Array<DigimonI> = db;
+        let Digimon = Digimons.filter(e=>e.name.toLowerCase()=== name.toLowerCase());
+        if(Digimon.length<1){
+            throw "No se encontro el primer Digimon";
+        }
+        const type1 = Digimon[0].type.filter(e=> e.name);
+        let matches: Array<DigimonI> = [];
+
+        Digimons.forEach(Digimon => {
+            const found = Digimon.type.filter(e => e.strongAgainst === type1[0].name);
+            if (found.length > 0) {
+                matches.push(Digimon);
+            }
+        })
+        if (matches.length < 1) {
+            throw "No se encontro";
+        }
+
+        return matches;
+    }
 }
 
 export default DigimonsService;

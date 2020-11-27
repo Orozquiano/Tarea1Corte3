@@ -66,3 +66,15 @@ export function getFuerte(req: Request, res: Response) {
     }
     
 }
+
+export function getDebil(req: Request, res: Response) {
+    try {
+        const name = req.params.name && req.params.name;
+        if(!name){ throw "Se requiere el ID del digimon."}
+        const Digimon = DigimonsService.getDebil(name);
+        res.status(200).json(Digimon);
+    } catch (error) {
+        res.status(400).send(error);
+    }
+    
+}

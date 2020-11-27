@@ -17,6 +17,7 @@ router.get('/digimons/:id', DigimonsController.get);
 router.get('/digimons/name/:name', DigimonsController.getName);
 router.get('/digimons/type/:type', DigimonsController.getType);
 router.get('/digimons/fuerte/:name', DigimonsController.getFuerte);
+router.get('/digimons/debil/:name', DigimonsController.getDebil);
 router.get('/digimons/create/:id/:name/:nombreTipo/:fuerteTipo/:debilTipo/:img', DigimonsController.getCreate);
 
 router.get('/Pokemones', PokemonController.getAll);
